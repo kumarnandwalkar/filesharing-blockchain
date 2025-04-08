@@ -1,13 +1,19 @@
 const hre = require("hardhat");
 
 async function main() {
+  // Deploy FileShare
   const FileShare = await hre.ethers.getContractFactory("FileShare");
   const fileShare = await FileShare.deploy();
+  await fileShare.waitForDeployment();
+  const fileShareAddress = await fileShare.getAddress();
+  console.log("✅ FileShare deployed to:", fileShareAddress);
 
-  await fileShare.waitForDeployment(); // ✅ Ethers v6 way to wait for deployment
-
-  const address = await fileShare.getAddress(); // ✅ Ethers v6 way to get contract address
-  console.log("FileShare deployed to:", address);
+  // Deploy FileVersionControl
+  const FileVersionControl = await hre.ethers.getContractFactory("FileVersionControl");
+  const fileVersionControl = await FileVersionControl.deploy();
+  await fileVersionControl.waitForDeployment();
+  const fileVersionControlAddress = await fileVersionControl.getAddress();
+  console.log("✅ FileVersionControl deployed to:", fileVersionControlAddress);
 }
 
 main().catch((error) => {

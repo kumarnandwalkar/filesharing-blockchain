@@ -72,6 +72,78 @@
       "artifacts": [
         "Lock"
       ]
+    },
+    "E:\\new demo bl\\blockchain-file-share\\contracts\\FileAccessControl.sol": {
+      "lastModificationDate": 1744136615303,
+      "contentHash": "163f6a65497b3bdc14941ef752162cd0",
+      "sourceName": "contracts/FileAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FileAccessControl"
+      ]
+    },
+    "E:\\new demo bl\\blockchain-file-share\\contracts\\FileVersionControl.sol": {
+      "lastModificationDate": 1744146774569,
+      "contentHash": "88584441ccd91e2c78cd1f3cdf7ba2a0",
+      "sourceName": "contracts/FileVersionControl.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FileVersionControl"
+      ]
     }
   }
 }
